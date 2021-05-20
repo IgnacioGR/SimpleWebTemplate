@@ -1,5 +1,5 @@
 :root {
-  --black: #13171b;
+  --black: #27292b;
   --gray: #393e46;
   --darkGray: #2c2f35;
   --blue: #00adb5;
@@ -39,11 +39,14 @@ nav a {
   text-align: center;
 }
 
-h1 {
+h1,
+h2 {
   margin: 0;
+  font-family: "Pattaya", sans-serif;
 }
 
 a {
+  font-family: "Pattaya", sans-serif;
   text-decoration: none;
   color: var(--pink);
 }
@@ -64,12 +67,38 @@ article {
   border: 2px solid var(--pink);
   margin: 20px;
   text-align: left;
+  max-height: 100%;
+  overflow: auto;
+  background-color: var(--gray);
 }
 
 article p {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+  max-height: 80%;
+}
+
+article h2 {
+  text-align: center;
+  margin: 5px;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  text-align: left;
+}
+
+form label {
+  margin: 10px 10px 10px 0px;
+}
+textarea,
+input,
+select {
+  background-color: lightgray;
+  margin-bottom: 5px;
 }
 
 /* -------------------------- class selectors -------------------------- */
@@ -146,4 +175,28 @@ article p {
 
 #contact-container {
   background-color: var(--gray);
+  height: 92vh;
+}
+
+#form-container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  flex-flow: column;
+  padding: 10px;
+}
+
+#footer-container {
+  z-index: 999;
+  height: 8vh;
+  width: 100%;
+  background-color: var(--black);
+  border-top: 2px solid var(--pink);
+  bottom: 0;
 }
