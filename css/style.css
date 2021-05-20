@@ -68,20 +68,17 @@ article {
   margin: 20px;
   text-align: left;
   max-height: 100%;
-  overflow: auto;
   background-color: var(--gray);
-}
-
-article p {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  max-height: 80%;
 }
 
 article h2 {
   text-align: center;
   margin: 5px;
+  font-size: 4rem;
+}
+
+article p {
+  margin: 0 0 20px 0;
 }
 
 form {
@@ -94,6 +91,7 @@ form {
 form label {
   margin: 10px 10px 10px 0px;
 }
+
 textarea,
 input,
 select {
@@ -112,11 +110,21 @@ select {
   z-index: 1;
   height: 100vh;
   width: 100vw;
+  border-bottom: 2px solid var(--pink);
 }
 
 .product-img {
   width: 50%;
   margin-left: 25%;
+}
+
+.text-wrapper {
+  margin: 2px auto 20px auto;
+  height: fit-content;
+  width: 85%;
+  max-height: 50vh;
+  overflow: auto;
+  font-size: 1.3rem;
 }
 
 /* -------------------------- id selectors -------------------------- */
@@ -158,7 +166,7 @@ select {
   font-size: 2em;
 }
 
-#about-container {
+#products-container {
   background-color: var(--darkGray);
 }
 
@@ -197,6 +205,4 @@ select {
   height: 8vh;
   width: 100%;
   background-color: var(--black);
-  border-top: 2px solid var(--pink);
-  bottom: 0;
 }
