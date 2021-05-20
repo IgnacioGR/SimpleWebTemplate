@@ -1,0 +1,114 @@
+:root {
+  --black: #13171b;
+  --gray: #393e46;
+  --darkGray: #2c2f35;
+  --blue: #00adb5;
+  --pink: #ff2e63;
+}
+/* -------------------------- variable selectors -------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: var(--pink);
+}
+
+header {
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  width: 50%;
+  height: 50px;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+nav a {
+  margin: auto 10px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--pink);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: var(--blue);
+}
+
+/* -------------------------- class selectors -------------------------- */
+.icon {
+  margin-left: 10px;
+  height: 100%;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* -------------------------- id selectors -------------------------- */
+#header-container {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: var(--black);
+  padding: 2px;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+#logo-container {
+  display: flex;
+  width: fit-content;
+  height: 50px;
+  flex-flow: row wrap;
+}
+
+#logo-container h1 {
+  margin: auto 10px;
+  padding: 0;
+  width: 50%;
+}
+
+#home-container {
+  background-color: var(--gray);
+  text-align: center;
+}
+
+#slogan-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+
+#about-container {
+  background-color: var(--darkGray);
+}
+
+#contact-container {
+  background-color: var(--gray);
+}
