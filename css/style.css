@@ -19,8 +19,10 @@ body {
 }
 
 header {
+  position: fixed;
   width: 100%;
   height: 50px;
+  z-index: 999;
 }
 
 nav {
@@ -56,6 +58,20 @@ button:hover {
   background-color: var(--blue);
 }
 
+article {
+  width: 50%;
+  height: fit-content;
+  border: 2px solid var(--pink);
+  margin: 20px;
+  text-align: left;
+}
+
+article p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
 /* -------------------------- class selectors -------------------------- */
 .icon {
   margin-left: 10px;
@@ -63,8 +79,15 @@ button:hover {
 }
 
 .main-container {
+  position: relative;
+  z-index: 1;
   height: 100vh;
   width: 100vw;
+}
+
+.product-img {
+  width: 50%;
+  margin-left: 25%;
 }
 
 /* -------------------------- id selectors -------------------------- */
@@ -93,7 +116,6 @@ button:hover {
 }
 
 #home-container {
-  position: relative;
   background-color: var(--gray);
   text-align: center;
 }
@@ -108,14 +130,13 @@ button:hover {
 }
 
 #about-container {
-  position: relative;
   background-color: var(--darkGray);
 }
 
 #product-container {
+  display: flex;
   width: 80%;
   height: 80%;
-  background-color: #00adb5;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -124,6 +145,5 @@ button:hover {
 }
 
 #contact-container {
-  position: relative;
   background-color: var(--gray);
 }
